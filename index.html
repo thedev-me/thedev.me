@@ -8,13 +8,7 @@
     <link rel="icon" href="https://raw.githubusercontent.com/thedev-me/register/main/media/icon.png" type="image/png">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-        
-        @keyframes colorChange {
-            0% { color: #f66095; }
-            50% { color: #ffffff; }
-            100% { color: #f66095; }
-        }
-        
+
         html, body {
             height: 100%;
             margin: 0;
@@ -87,9 +81,14 @@
         
         .title {
             font-size: 2em;
-            animation: colorChange 3s infinite;
+            transition: color 0.5s;
+            color: #f66095
         }
-        
+
+        .title:hover {
+            color: #ffffff;
+        }
+
         .github-link img {
             width: 40px;
             height: 40px;
